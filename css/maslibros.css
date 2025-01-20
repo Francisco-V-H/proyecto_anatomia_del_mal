@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    color: #b8b2b2;
+    background-color: #bebaba; 
+}
+
+.section {
+    padding: 70px;
+    text-align: center;
+    background-color: #bebaba;
+}
+
+.section h1, .section h2 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.section p {
+    font-size: 1.25rem;
+}
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Set to 2 columns */
+    gap: 50px;
+    padding: 50px;
+    background-color: #bebaba;
+}
+
+
+
+.book-card {
+    text-align: center;
+    background-color: #fff;
+    padding: 80px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+.book-card img {
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.book-card h3 {
+    margin: 20px 0;
+    font-size: 1.2rem;
+    color: #686b6e;
+}
+
+.book-card p {
+    font-size: 1.25rem;
+    color: #666;
+}
+
+
+.book-card:hover {
+    transform: scale(1.05);
+}
+
+.footer .social-icons {
+    margin-bottom: 10px;
+    /* Espacio entre íconos y texto */
+  }
+  
+  .footer .social-icons a {
+    color: white;
+    /* Color de los iconos */
+    margin: 0 10px;
+    /* Espacio entre íconos */
+    font-size: 24px;
+    /* Tamaño de los iconos */
+    transition: color 0.3s;
+    /* Transición suave para color */
+  }
+  
+  .footer .social-icons a:hover {
+    color: #FFD700;
+    /* Color dorado al pasar el ratón */
+  }
