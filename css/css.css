@@ -81,6 +81,21 @@ nav ul.menu {
   min-height: 100vh;
 
 }
+
+.libro360 {
+  display: flex;
+  gap: 100px; 
+  justify-content: center;
+}
+.libro360 img {
+  width: 350px; /* Ancho deseado */
+  height: 350px; /* Alto deseado */
+  object-fit: cover; /* Ajusta la imagen dentro del tamaño dado */
+  border: 2px solid #333; /* Opcional: borde decorativo */
+  border-radius: 8px;
+
+}
+
   
 
   
@@ -112,6 +127,8 @@ nav ul.menu {
     font-size: 1em;
     line-height: 1.5;
   }
+
+
   
   .icon {
     width: 30px;
