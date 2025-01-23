@@ -84,19 +84,36 @@ nav ul.menu {
 
 .libro360 {
   display: flex;
-  gap: 100px; 
+  gap: 80px; 
   justify-content: center;
 }
 .libro360 img {
-  width: 350px; /* Ancho deseado */
-  height: 350px; /* Alto deseado */
-  object-fit: cover; /* Ajusta la imagen dentro del tamaño dado */
-  border: 2px solid #333; /* Opcional: borde decorativo */
-  border-radius: 8px;
-
+  width: 400px; 
+  height: 550px;
+  
 }
 
-  
+.seccion-info {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.seccion-info h2 {
+  color: #003366;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.seccion-info ul{
+  list-style: none;
+  padding: 1;
+}
+
+
 
   
   .grid-container {
