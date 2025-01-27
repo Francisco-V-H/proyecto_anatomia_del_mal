@@ -5,9 +5,15 @@
     <meta name="viewport" />
     <title>Anatomía del Mal</title>
     <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 </head>
+
+            
+
 <body>
-<header class= "header-container">
+  <header class= "header-container">
     <h1 class= "nombre">
     <img style="width: 60px;" src="imagenç/portada.png" alt="foto libro">
      Anatomía del mal 
@@ -22,19 +28,7 @@
             <li><a href="https://www.casadellibro.com/libros-ebooks/jordi-wild/20097020?srsltid=AfmBOooDxk6gh9ya9jyMtDIbOY6D3psK1xnrNy_eUorsshFAcg8XUnem">Tienda</a></li>
         </ul>
         <label class="labe_hamburguesa" for="menu_hamburguesa">
-          <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="35"
-              height="35"
-              fill="currentColor"
-              class="list_icon"
-              viewBox="0 0 16 16"
-          >
-              <path
-                  fill-rule="evenodd"
-                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
-              />
-          </svg>
+          
       </label>
     </nav>
     
@@ -43,10 +37,38 @@
 
 
 <h2 class="warning-title">8 Crimes que te harán perder la fe en la humanidad</h2>
-<div class="libro360">
-<img src="imagenç/anatomiadelmal.jpg" alt="libro">
-<img src="imagenç/GGYkMD3awAAskKF.jpg" alt="Parte trasera">
-</div>
+
+<section>
+  
+  <div class="swiper">
+    
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="imagenç/anatomiadelmal.jpg" alt="caralibro"></div>
+      <div class="swiper-slide"><img src="imagenç/GGYkMD3awAAskKF.jpg" alt="Parteatras"></div>
+    </div>
+    <!-- Botones de navegación -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+<!-- Swiper.js -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper('.swiper', {
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+  
+</script>
+
 
 
   <div class="seccion-info" id="noticias">
@@ -59,12 +81,11 @@
   </div>
 
 
-
-
-
-
 <div class="cuadros">
 <div class="grid-container">
+  <video id="video" autoplay muted loop>
+    <source src="imagenç/videos-cortos-para-tus-videos-35-leyendo-en-una-biblioteca.mp4" type="video/mp4">
+  </video>
     <div class="card">
       <h3>El Rincón de Giorgio</h3>
       <p>El primer canal de YouTube de Jordi Wild cuenta con más de 11M de seguidores y es uno de los canales más reconocidos de habla hispana.</p>
