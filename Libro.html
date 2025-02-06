@@ -1,0 +1,89 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" />
+    <title>Anatomía del Mal</title>
+    <link rel="stylesheet" href="css/css2.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+    <header class= "header">
+      <h1 class= "nombre">  
+      <img style="width: 60px;" src="imagenç/portada.png" alt="foto libro">
+       Anatomía del mal 
+      <img style="width: 60px;" src="imagenç/portada.png" alt="foto libro"> </h1>
+        
+      <nav>
+          <ul class= "menu">
+              <li style="margin-left: 20px;"><a href="pagina.html">Inicio</a></li>
+              <li style="margin-left: 20px;"><a href="#autor">Autor</a></li>
+              <li style="margin-left: 20px;"><a href="maslibros.html">Más libros</a></li>
+              <li style="margin-left: 20px;"><a href="#contact">Contáctanos</a></li>
+              <li><a href="https://www.casadellibro.com/libros-ebooks/jordi-wild/20097020?srsltid=AfmBOooDxk6gh9ya9jyMtDIbOY6D3psK1xnrNy_eUorsshFAcg8XUnem">Tienda</a></li>
+          </ul>
+        
+            
+        </label>
+      </nav>
+      
+  </header>
+  <video src="imagenç/190111_15_Misc_UHD_01.mp4" autoplay="true" muted="true" loop="true" ></video>
+    
+        <section id="casos">
+            <div class="caso">
+                <h2>La misoginia patológica de la masacre de Isla Vista</h2>
+                <p>Una de las consecuencias más malsanas de la cultura incel que tuvo lugar en California.</p>
+            </div>
+            <div class="caso">
+                <h2>El peor crimen perpetrado contra un individuo en la historia de Indiana</h2>
+                <p>El acto de crueldad colectiva extrema del que se considera el peor de Indiana, una de las torturas más largas, persistentes y despiadadas que he conocido en mi vida. </p>
+            </div>
+            <div class="caso">
+                <h2>Los asesinos más jóvenes del Reino Unido</h2>
+                <p>El que quizá sea el acto de maldad infantil más perturbador del siglo xx, que convirtió a sus perpetradores en los condenados más jóvenes de la historia de Reino Unido. </p>
+            </div>
+            <div class="caso">
+                <h2>Los trece hermanos</h2>
+                <p>Las escalofriantes vivencias de trece hermanos que permanecieron confinados y en condiciones infrahumanas en una casa de California, por muchos conocida como «La casa de los horrores», y que constituye uno de los peores casos de violencia intrafamiliar. </p>
+            </div>
+            <div class="caso">
+                <h2>Los maniacos de Dnepropetrovsk</h2>
+                <p>Un ejemplo claro de que el ego y el deseo de notoriedad pueden conducir a las personas, en este caso, a dos jóvenes ucranianos, a grabar sus asesinatos y torturas.</p>
+            </div>
+            <div class="caso">
+                <h2>Delincuentes japoneces</h2>
+                <p>Cómo la cultura japonesa, con sus claroscuros, es capaz de empujar a jóvenes inadaptados hasta el límite y originar el peor acto de delincuencia callejera de Tokio de las últimas tres décadas. </p>
+            </div>
+            <div class="caso">
+                <h2>Lucha de clases</h2>
+                <p>Un extraño incidente de lucha de clases que tuvo lugar hace casi un siglo en Francia, cuando las sirvientas de una casa se rebelaron contra su señora y se convirtieron en bestias salvajes. </p>
+            </div>
+            <div class="caso">
+                <h2>Las brujas de San Fernando</h2>
+                <p>Y, finalmente, un caso español, el de dos adolescentes que acaban abducidas por los ritos satánicos y la cultura gótica hasta el punto de asestar treinta y dos puñaladas a una compañera de clase.</p>
+            </div>
+        </section>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const observer = new IntersectionObserver(entries => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('visible');
+                        }
+                    });
+                }, { threshold: 0.2 });
+    
+                document.querySelectorAll('.caso').forEach(caso => {
+                    observer.observe(caso);
+                });
+            });
+        </script>
+    </body>
+    </html>
