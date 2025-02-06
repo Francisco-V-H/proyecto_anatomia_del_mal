@@ -14,10 +14,11 @@ header {
   padding: 10px 20px;
   color: white;
   text-align: center;
-  position: relative;
+ position: relative;
   background-size: cover;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
   transition: background-color 0.5s ease, transform 0.5s ease;
+
 
 }
 
@@ -28,7 +29,7 @@ transform: scale(1.05);
 
 
 
-nombre {
+.nombre {
   font-size: 36px;
   font-weight: bold;
   text-transform: uppercase;
@@ -37,7 +38,7 @@ nombre {
   justify-content: center;
   align-items: center;
 }
-nombre img {
+.nombre img {
   margin: 0 30px;
 }
 
