@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: 'Times New Roman', serif; 
   color: #b8b2b2;
-  background-color: #dfd9d9; 
+  background-color: #272525; 
   
   
 }
@@ -135,4 +135,46 @@ video {
 .visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+
+.container {
+    display: flex;
+    max-width: 900px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.image-container {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.text-container {
+    flex: 2;
+}
+
+h2 {
+    font-size: 24px;
+    color: #f1c40f;
+}
+
+h3 {
+    font-size: 18px;
+    color: #e74c3c;
+}
+
+h1 {
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
 }
